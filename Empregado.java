@@ -1,5 +1,5 @@
 public class Empregado {
-
+    //comentário
   private String nome;
   private int idade;
   private int tipo;
