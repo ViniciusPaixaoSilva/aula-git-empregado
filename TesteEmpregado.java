@@ -1,5 +1,7 @@
+import java.util.*;
 public class TesteEmpregado {
-    //comentário
+
+  //comentário
   public static void main(String[] args) {
     Empregado e1 = new Empregado();
     Empregado e2 = new Empregado();
@@ -18,5 +20,13 @@ public class TesteEmpregado {
     System.out.println(e1.calculaSalario());
     System.out.println(e2.calculaSalario());
     System.out.println(e3.calculaSalario());
+
+    //adicionando todo mundo em uma lista
+    List<Empregado> emps = Arrays.asList(e1, e2, e3);
+    //mostra os valores
+    /*System.out.println (e1.calculaSalario());
+System.out.println (e2.calculaSalario());
+System.out.println (e3.calculaSalario());*/
+    for (Empregado e : emps) System.out.println(e.calculaSalario());
   }
 }
